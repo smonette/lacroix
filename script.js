@@ -67,7 +67,8 @@ let lastNames = [
   "Atom",
   "Tilts",
   "Tatum",
-  "Chatum"
+  "Chatum",
+  "💪💪💪"
 ]
 
 function soRandom(items) {
@@ -83,6 +84,6 @@ $(document).ready(function() {
     generateName()
 });
 
-$( "#generate-name-btn" ).click(function() {
-  generateName()
+$("#generate-name-btn").click(function() {
+    generateName()
 });
