@@ -35,15 +35,15 @@ let flavors = [
 ]
 
 let colors = [
-  "#5f02e7",
-  "#39d6f9",
-  "#e72b6d",
-  "#73cda4",
-  "#772485",
-  "#976029",
-  "#3cca2c",
-  "#febf08",
-  "#e2cf9a"
+  "#DED29E",
+  "#DABFDE",
+  "#C1BBDD",
+  "#ACECD5",
+  "#F47C7C",
+  "#F7F48B",
+  "#A1DE93",
+  "#F7F48B",
+  "#F47C7C"
 ]
 
 function soRandom(items) {

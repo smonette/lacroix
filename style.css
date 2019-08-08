@@ -1,16 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap');
+
 body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 4.5em 2em;
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 4.5rem 2rem;
   text-align: center;
 }
 
+.intro-text {
+  margin-bottom: 4rem;
+  font-weight: normal;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
 .name-display {
-  margin-bottom: 40px;
-  font-size: 24px;
-  font-style: italic;
+  margin-bottom: 4rem;
+  font-size: 20px;
+  font-family: 'Lexend Zetta', sans-serif;
+  text-transform: uppercase;
 }
 
 .generate-name-btn {
   padding: 10px;
   font-size: 16px;
+  border: none;
 }
