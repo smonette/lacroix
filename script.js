@@ -32,6 +32,7 @@ let flavors = [
   "L'orange",
   "Lychee",
   "Fig",
+  "Yeast",
   "Butter",
   "Apple", 
   "Yam",
@@ -62,18 +63,18 @@ let colors = [
 
 
 
-function soRandom(items) {
+function randomize(items) {
   return Math.floor(Math.random() * (items.length))
 }  
 
 function randomColor(){
-  let selectedColor = colors[soRandom(colors)]
+  let selectedColor = colors[randomize(colors)]
    $('body').css("background", selectedColor)
 }
 
 function generateName(){
- let firstFlavor = flavors[soRandom(flavors)]
- let secondFlavor = flavors[soRandom(flavors)]
+ let firstFlavor = flavors[randomize(flavors)]
+ let secondFlavor = flavors[randomize(flavors)]
  let newFlavors = [
     `${firstFlavor} - ${secondFlavor}`,
     `${firstFlavor} & ${secondFlavor}`,
@@ -82,7 +83,7 @@ function generateName(){
     `Essence of ${secondFlavor}`
   ]
 
- $('#name-display').text(newFlavors[soRandom(newFlavors)])
+ $('#name-display').text(newFlavors[randomize(newFlavors)])
  randomColor()
 }
 
