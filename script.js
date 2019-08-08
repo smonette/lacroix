@@ -52,7 +52,7 @@ function soRandom(items) {
 
 function randomColor(){
   let selectedColor = colors[soRandom(colors)]
-   $('#can-image:after').css("background", selectedColor)
+   $('body').css("background", selectedColor)
 }
 
 function generateName(){
