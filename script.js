@@ -58,11 +58,6 @@ let colors = [
   "#F47C7C"
 ]
 
-
-
-
-
-
 function randomize(items) {
   return Math.floor(Math.random() * (items.length))
 }  
