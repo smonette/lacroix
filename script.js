@@ -15,6 +15,8 @@ let flavors = [
   "Scallion",
   "Beer",
   "Coconut",
+  "Flax",
+  "Shrimp",
   "Sunblock",
   "Glitter",
   "Watermelon",
@@ -28,10 +30,13 @@ let flavors = [
   "L'orange",
   "Lychee",
   "Fig",
+  "Apple", 
   "Yam",
   "Honeydew",
   "Corn",
-  "Unicorn"
+  "Unicorn",
+  "Taco",
+  "Donut"
 ]
 
 let colors = [

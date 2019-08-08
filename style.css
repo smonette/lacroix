@@ -2,17 +2,17 @@
 
 body {
   font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 4.5rem 2rem;
   text-align: center;
+  padding-top: 2rem;
 }
 
 .intro-text {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   font-weight: normal;
 }
 
 .logo {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .name-display {
@@ -26,4 +26,8 @@ body {
   padding: 10px;
   font-size: 16px;
   border: none;
+  background: #000080;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 1rem 2rem;
 }
