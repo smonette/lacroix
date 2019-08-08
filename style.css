@@ -4,14 +4,10 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
-}
-
 .name-display {
   margin-bottom: 40px;
   font-size: 24px;
+  font-style: italic;
 }
 
 .generate-name-btn {
