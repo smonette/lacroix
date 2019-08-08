@@ -1,74 +1,33 @@
-let firstNames = [
-  "Tater",
-  "Chanum",
-  "Channing",
-  "Tasty",
-  "Tater Tot",
-  "Chancey",
-  "Tastey",
-  "Turgid",
-  "Churlish",
-  "Mark Wahlberg",
-  "Choo Choo",
-  "Chandelier",
-  "Chutney",
-  "Hamming",
-  "Hammy",
-  "Toe Jam",
-  "Chinning",
-  "Toe Jam",
-  "Chimney",
-  "Charlie's",
-  "Possum",
-  "Chitty Chitty",
-  "Curly",
-  "Chowder",
-  "Chuggachugga",
-  "Poodle",
-  "Chunnel",
-  "Jittery",
-  "Chunky",
-  "Chunder",
-  "Lady Chatterley's",
-  "Chat",
-  "Charming",
-  "Chanting"
-]
-
-let lastNames = [
-  "Tainting",
-  "Tiny Tim",
-  "Tum Tum",
-  "Chanson",
-  "Channel",
-  "Tater Tot",
-  "Turtle Toy",
-  "Tates",
-  "Toodles",
-  "Train Train",
-  "Tangles",
-  "Chattanooga",
-  "Tang Tang",
-  "Trawler",
-  "Totes",
-  "Taterball",
-  "Tamper",
-  "Tablet",
-  "Turkey",
-  "Tootin'",
-  "Mankell",
-  "Tantrum",
-  "Titter Tada",
-  "Tang Bang",
-  "Tada",
-  "Tube Top",
-  "TOOT TOOT!",
-  "Muscle",
-  "Atom",
-  "Tilts",
-  "Tatum",
-  "Chatum",
-  "💪💪💪"
+let flavors = [
+  "Cherry",
+  "Acai",
+  "Pomegranate",
+  "Banana",
+  "Kiwi",
+  "Tangerine",
+  "Aubergine",
+  "Grapefruit",
+  "Peach",
+  "Pear",
+  "Mint",
+  "Corriander",
+  "Potato",
+  "Scallion",
+  "Beer",
+  "Coconut",
+  "Sunblock",
+  "Glitter",
+  "Watermelon",
+  "Strawberry",
+  "Nectarine",
+  "Rosemary",
+  "Muskmelon",
+  "Citron",
+  "Clémentine",
+  "Framboise",
+  "L'orange",
+  "Lychee",
+  "Fig"
 ]
 
 function soRandom(items) {
@@ -76,9 +35,12 @@ function soRandom(items) {
 }  
 
 function generateName(){
-    $("#first-name-display").text(firstNames[soRandom(firstNames.length)])
-    $("#last-name-display").text(lastNames[soRandom(lastNames.length)])
+ let firstFlavor = flavors[soRandom(flavors.length)]
+ let secondFlavor = flavors[soRandom(flavors.length)]
+ $('#name-display').text(`${firstFlavor}-${secondFlavor}`)
+ // return(`${firstFlavor}-${secondFlavor}`)
 }
+
 
 $(document).ready(function() {
     generateName()
