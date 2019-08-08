@@ -27,7 +27,11 @@ let flavors = [
   "Framboise",
   "L'orange",
   "Lychee",
-  "Fig"
+  "Fig",
+  "Yam",
+  "Honeydew",
+  "Corn",
+  "Unicorn"
 ]
 
 function soRandom(items) {
@@ -38,7 +42,6 @@ function generateName(){
  let firstFlavor = flavors[soRandom(flavors.length)]
  let secondFlavor = flavors[soRandom(flavors.length)]
  $('#name-display').text(`${firstFlavor}-${secondFlavor}`)
- // return(`${firstFlavor}-${secondFlavor}`)
 }
 
 
