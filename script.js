@@ -1,49 +1,3 @@
-let flavor1 = [
-  "Acai",
-  "Pomegranate",
-  "Banana",
-  "Kiwi",
-  "Tangerine",
-  "Grapefruit",
-  "Pluot",
-  "Mint",
-  "Watermelon",
-  "Strawberry",
-  "Nectarine",
-  "Muskmelon",
-  "Citron",
-  "Clémentine",
-  "Framboise",
-  "L'orange",
-  "Lychee",
-  "Fig",
-  "Apple", 
-  "Honeydew"
-]
-
-let flavor2 = [
-  "Aubergine",
-  "Corriander",
-  "Potato",
-  "Scallion",
-  "Beer",
-  "Walnut",
-  "Flax",
-  "Shrimp",
-  "Sunblock",
-  "Glitter",
-  "Muskmelon",
-  "Bacon",
-  "Butter",
-  "Yam",
-  "Corn",
-  "Unicorn",
-  "Taco",
-  "Chorizo",
-  "Donut",
-  "Cough Syrup"
-]
-
 let flavors = [
   "Acai",
   "Pomegranate",
@@ -61,9 +15,11 @@ let flavors = [
   "Coconut",
   "Walnut",
   "Flax",
+  "Sourdough",
   "Shrimp",
   "Sunblock",
   "Glitter",
+  "Queso",
   "Watermelon",
   "Strawberry",
   "Nectarine",
@@ -103,12 +59,6 @@ let colors = [
 
 
 
-// function generateNewName(){
-//  let firstFlavor = flavors[soRandom(flavors)]
-//  let secondFlavor = flavors[soRandom(flavors)]
-//  $('#name-display').text(`${flavor1} - ${flavor2}`)
-//  randomColor()
-// }
 
 
 
@@ -124,7 +74,15 @@ function randomColor(){
 function generateName(){
  let firstFlavor = flavors[soRandom(flavors)]
  let secondFlavor = flavors[soRandom(flavors)]
- $('#name-display').text(`${firstFlavor} - ${secondFlavor}`)
+ let newFlavors = [
+    `${firstFlavor} - ${secondFlavor}`,
+    `${firstFlavor} & ${secondFlavor}`,
+    `Fresh ${firstFlavor}`,
+    `Exotic ${firstFlavor}`,
+    `Essence of ${secondFlavor}`
+  ]
+
+ $('#name-display').text(newFlavors[soRandom(newFlavors)])
  randomColor()
 }
 
