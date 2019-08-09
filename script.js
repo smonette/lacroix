@@ -43,7 +43,12 @@ let flavors = [
   "Chorizo",
   "Donut",
   "Cough Syrup",
-  "Scallops"
+  "Scallops",
+  "Tumeric",
+  "Saffron",
+  "Pumpkin Spice",
+  "Cardamom",
+  "Ginger"
 ]
 
 
