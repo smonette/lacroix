@@ -15,13 +15,14 @@ body {
   font-size: 20px;
   font-family: 'Lexend Zetta', sans-serif;
   text-transform: uppercase;
+  color: rgba(9,37,102, 1);
 }
 
 .generate-name-btn {
   padding: 10px;
   font-size: 16px;
   border: none;
-  background: #000080;
+  background: rgba(9,37,102, 1);
   color: #ffffff;
   cursor: pointer;
   padding: 1rem 2rem;
