@@ -88,7 +88,8 @@ function generateName(){
     `${firstFlavor} & ${secondFlavor}`,
     `Fresh ${firstFlavor}`,
     `Exotic ${firstFlavor}`,
-    `${secondFlavor} Essence`
+    `${secondFlavor} Essence`,
+    `Essence of ${secondFlavor}`
   ]
 
   $('#name-display').text(newFlavors[randomize(newFlavors)])
