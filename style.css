@@ -25,6 +25,8 @@
 }
 body {
   font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  line-height: 1.5;
+  
   text-align: center;
   padding-top: 4rem;
   
@@ -35,9 +37,16 @@ body {
 
 .new-flavor-container {
   width: 100%;
-  max-width: 550px;
-  padding: 2rem 4rem;
   margin-bottom: 4rem;
+  padding: 1rem 2rem;
+
+}
+
+@media screen and (min-width: 400px) {
+  .new-flavor-container {
+    max-width: 600px;
+    padding: 2rem 4rem;
+  }
 }
 
 .logo {
@@ -88,6 +97,7 @@ footer {
 
 @media screen and (min-width: 500px) {
   footer {
+    background: #fff;
     position: absolute;
     right: 0;
     bottom: 0;
