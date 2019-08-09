@@ -54,7 +54,8 @@ let flavors = [
   "Garbanzo Bean",
   "Foie Gras",
   "Wasabi",
-  "Loofah"
+  "Loofah",
+  "Malort"
 ]
 
 let colors = [
