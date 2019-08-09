@@ -1,6 +1,4 @@
 let flavors = [
-  "Acai",
-  "Pomegranate",
   "Banana",
   "Kiwi",
   "Tangerine",
@@ -46,7 +44,15 @@ let flavors = [
   "Pumpkin Spice",
   "Cardamom",
   "Ginger",
-  "Durian"
+  "Durian",
+  "Tofu",
+  "Truffle",
+  "Crab",
+  "Nostalgia",
+  "Ennui",
+  "Shawarma",
+  "Garbanzo Bean",
+  "Foie Gras"
 ]
 
 let colors = [
