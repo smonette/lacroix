@@ -105,9 +105,11 @@ $("#generate-name-btn").click(function() {
 
 $("#screencap-btn").click(function(e) {
     e.preventDefault()
-  
+    console.log('inside click')
     domtoimage.toPng(document.getElementById('screencap'))
         .then(function (dataUrl) {
+          console.log('inside then')
+
             var link = document.createElement('a');
             link.download = 'lacroix.png'
             link.href = dataUrl
