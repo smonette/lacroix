@@ -100,3 +100,6 @@ $(document).ready(function() {
 $("#generate-name-btn").click(function() {
     generateName()
 });
+
+
+
