@@ -1,4 +1,4 @@
-Welcome to Glitch
+LaCr
 =================
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
@@ -8,28 +8,14 @@ Click `Show` in the header to see your app live. Updates to your code will insta
 Find out more [about Glitch](https://glitch.com/about).
 
 
-Your Project
+Bad LaCroix Flavor Generator 
 ------------
+A simple HTML+jQuery site that comes up with new terrible LaCroix flavors! (Move over coconut!)
 
-### ← README.md
+Uses [dom-to-img](https://github.com/tsayen/dom-to-image) for the screenshots.
 
-That's this file, where you can tell people what your cool website does and how you built it.
-
-### ← index.html
-
-Where you'll write the content of your website. 
-
-### ← style.css
-
-CSS files add styling rules to your content.
-
-### ← script.js
-
-If you're feeling fancy you can add interactivity to your site with JavaScript.
-
-### ← assets
-
-Drag in `assets`, like images or music, to add them to your project
+Idea by [Lyzi Diamond](https://glitch.com/@lyzidiamond)
+Built by [Steph Monette](https://glitch.com/@smonette)
 
 Made by [Glitch](https://glitch.com/)
 -------------------
