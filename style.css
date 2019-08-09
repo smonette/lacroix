@@ -42,6 +42,8 @@ body {
 
 .logo {
   margin-bottom: 1rem;
+  width: 100%;
+  max-width: 400px;
 }
 
 .name-display {
@@ -59,6 +61,7 @@ body {
   color: #ffffff;
   cursor: pointer;
   padding: 1rem 2rem;
+  width: 100%;
   max-width: 300px;
   margin-bottom: 2rem;
 }
@@ -67,6 +70,15 @@ body {
   background: rgba(12,99,179, 1);
 }
 
+.screencap-btn {
+  display:block;
+  color: rgba(9,37,102, 1);
+}
+
+.screencap-btn:hover,
+.screencap-btn:active {
+    color: rgba(12,99,179, 1);
+}
 
 footer {
   font-size: 12px;

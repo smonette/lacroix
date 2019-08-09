@@ -86,25 +86,22 @@ function generateName(){
     `${firstFlavor} & ${secondFlavor}`,
     `Fresh ${firstFlavor}`,
     `Exotic ${firstFlavor}`,
-    `Essence of ${secondFlavor}`
+    `${secondFlavor} Essence`
   ]
 
- $('#name-display').text(newFlavors[randomize(newFlavors)])
- randomColor()
+  $('#name-display').text(newFlavors[randomize(newFlavors)])
+  randomColor()
 }
 
 
 $(document).ready(function() {
     generateName()
-});
+})
 
 $("#generate-name-btn").click(function() {
     generateName()
-});
+})
 
-
-
-var capture = $('#screencap')
 
 $("#screencap-btn").click(function(e) {
     e.preventDefault()
@@ -112,9 +109,9 @@ $("#screencap-btn").click(function(e) {
     domtoimage.toPng(document.getElementById('screencap'))
         .then(function (dataUrl) {
             var link = document.createElement('a');
-            link.download = 'lacroix.png';
-            link.href = dataUrl;
-            link.click();
+            link.download = 'lacroix.png'
+            link.href = dataUrl
+            link.click()
         });
   
   
