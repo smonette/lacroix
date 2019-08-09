@@ -45,7 +45,8 @@ let flavors = [
   "Saffron",
   "Pumpkin Spice",
   "Cardamom",
-  "Ginger"
+  "Ginger",
+  "Durian"
 ]
 
 let colors = [
