@@ -13,6 +13,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <!-- import dom-to-image library -->
+    <script src="/dom-to-image.js" defer></script>
 
   </head>  
   <body>
@@ -23,11 +25,17 @@
     </div>
     
     <button id="generate-name-btn" class="generate-name-btn">Something else, please.</button>
+    
 
-    <footer>The LaCroix logo is property of <a href="https://www.lacroixwater.com">LaCroix Water</a>.<br>Made with <a href="https://glitch.com/">Glitch</a>🎏</footer>
+    <footer>
+      <a id="screencap-btn" href="#">Save flavor.</a>
+      The LaCroix logo is property of <a href="https://www.lacroixwater.com">LaCroix Water</a>.
+      <br>Made with <a href="https://glitch.com/">Glitch</a>🎏
+    </footer>
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js"></script>
+
   </body>
 </html>

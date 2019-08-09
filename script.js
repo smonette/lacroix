@@ -74,7 +74,7 @@ function randomize(items) {
 
 function randomColor(){
   let selectedColor = colors[randomize(colors)]
-   $('body').css("background", selectedColor)
+   $('body, #screencap').css("background", selectedColor)
 }
 
 function generateName(){
@@ -103,3 +103,16 @@ $("#generate-name-btn").click(function() {
 
 
 
+var capture = $('#screencap')
+
+$("#screencap-btn").click(function(e) {
+    e.preventDefault()
+  
+    domtoimage.toPng(document.getElementById('screencap'), { quality: 0.95 })
+        .then(function (dataUrl) {
+            var link = document.createElement('a');
+            link.download = 'my-image-name.jpeg';
+            link.href = dataUrl;
+            link.click();
+        });
+})
