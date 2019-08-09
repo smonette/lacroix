@@ -92,8 +92,8 @@ function generateName(){
     `Essence of ${secondFlavor}`
   ]
 
-  $('#name-display').text(newFlavors[randomize(newFlavors)])
-  randomColor()
+$('#name-display').text(newFlavors[randomize(newFlavors)])
+    randomColor()
 }
 
 
