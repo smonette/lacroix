@@ -67,6 +67,7 @@ let colors = [
   "#F7F48B",
   "#A1DE93",
   "#F7F48B",
+  "#ffbe61",
   "#F47C7C"
 ]
 
