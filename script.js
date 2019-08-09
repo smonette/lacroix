@@ -108,11 +108,13 @@ var capture = $('#screencap')
 $("#screencap-btn").click(function(e) {
     e.preventDefault()
   
-    domtoimage.toPng(document.getElementById('screencap'), { quality: 0.95 })
+    domtoimage.toPng(document.getElementById('screencap'))
         .then(function (dataUrl) {
             var link = document.createElement('a');
-            link.download = 'my-image-name.jpeg';
+            link.download = 'lacroix.png';
             link.href = dataUrl;
             link.click();
         });
+  
+  
 })
