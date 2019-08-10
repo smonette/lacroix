@@ -1,4 +1,6 @@
 /*  Google Webfonts */
+/*  For the screenshot to work successfully, they can't us the standard @import */
+
 /* latin-ext */
 @font-face {
   font-family: 'Lexend Zetta';
