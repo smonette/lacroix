@@ -55,7 +55,10 @@ let flavors = [
   "Foie Gras",
   "Wasabi",
   "Loofah",
-  "Malort"
+  "Malort",
+  "Pickle",
+  "Bell Pepper",
+  "Celery"
 ]
 
 let colors = [
@@ -94,6 +97,7 @@ function generateName(){
 
 $('#name-display').text(newFlavors[randomize(newFlavors)])
     randomColor()
+  setTimeout(updateScreencap, 0);
 }
 
 
@@ -106,16 +110,32 @@ $("#generate-name-btn").click(function() {
 })
 
 
-$("#screencap-btn").click(function(e) {
-    e.preventDefault()
-    domtoimage.toPng(document.getElementById('screencap'))
-        .then(function (dataUrl) {
+let canvas = document.createElement('canvas');
+function updateScreencap() {
+    let el = document.getElementById('screencap');
+    let elStyle = getComputedStyle(el);
+    canvas.width = el.offsetWidth;
+    canvas.height = el.offsetHeight;
+  
+    let ctx = canvas.getContext('2d');
+    ctx.fillStyle = getComputedStyle(document.body).backgroundColor;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            var link = document.createElement('a');
-            link.download = 'lacroix.png'
-            link.href = dataUrl
-            link.click()
-        });
-  
-  
-})
+    let logo = document.querySelector('.logo');
+    ctx.drawImage(logo, canvas.width / 2 - logo.width / 2, parseInt(elStyle.paddingTop), logo.width, logo.height);
+    
+    let name = document.querySelector('#name-display');
+    let nameTop = name.offsetTop - el.offsetTop + name.offsetHeight / 2;
+    let nameStyle = getComputedStyle(name);
+    ctx.font = nameStyle.fontWeight + ' ' + nameStyle.fontSize + ' ' + nameStyle.fontFamily;
+    ctx.fillStyle = nameStyle.color;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(name.innerText, canvas.width / 2, nameTop);
+    
+    let dataUrl = canvas.toDataURL();
+    let link = document.querySelector('#screencap-btn');
+    link.download = 'lacroix.png'
+    link.href = dataUrl;
+
+}
