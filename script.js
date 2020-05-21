@@ -58,7 +58,9 @@ let flavors = [
   "Malort",
   "Pickle",
   "Bell Pepper",
-  "Celery"
+  "Garlic Bread",
+  "Celery",
+  "Asparagus"
 ]
 
 let colors = [
@@ -95,9 +97,9 @@ function generateName(){
     `Essence of ${secondFlavor}`
   ]
 
-$('#name-display').text(newFlavors[randomize(newFlavors)])
+    $('#name-display').text(newFlavors[randomize(newFlavors)])
     randomColor()
-  setTimeout(updateScreencap, 0);
+    setTimeout(updateScreencap, 0);
 }
 
 
@@ -109,7 +111,7 @@ $("#generate-name-btn").click(function() {
     generateName()
 })
 
-
+// Screenshot tool by @Potch
 let canvas = document.createElement('canvas');
 function updateScreencap() {
     let el = document.getElementById('screencap');
@@ -137,5 +139,4 @@ function updateScreencap() {
     let link = document.querySelector('#screencap-btn');
     link.download = 'lacroix.png'
     link.href = dataUrl;
-
 }
