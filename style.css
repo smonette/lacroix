@@ -1,5 +1,5 @@
 /*  Google Webfonts */
-/*  For the screenshot to work successfully, they can't us the standard @import */
+/*  For the screenshot to work successfully, we can't us the standard Google @import */
 
 /* latin-ext */
 @font-face {
@@ -10,6 +10,7 @@
   src: local('Lexend Zetta Regular'), local('LexendZetta-Regular'), url(https://fonts.gstatic.com/s/lexendzetta/v1/ll87K2KYXje7CdOFnEWcU8sYny4frxdrAF1D.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lexend Zetta';
@@ -23,11 +24,12 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  text-align: center;
   line-height: 1.5;
   
-  text-align: center;
   padding-top: 4rem;
   
   display: flex;
@@ -59,9 +61,10 @@ a:active {
 }
 
 .logo {
-  margin-bottom: 1rem;
   width: 100%;
   max-width: 400px;
+  
+  margin-bottom: 1rem;
 }
 
 .name-display {
@@ -72,23 +75,24 @@ a:active {
 }
 
 .generate-name-btn {
-  padding: 10px;
   font-size: 16px;
-  border: none;
-  background: rgba(9,37,102, 1);
   color: #ffffff;
-  cursor: pointer;
-  padding: 1rem 2rem;
+  padding: 10px;
+  
   width: 100%;
   max-width: 300px;
+  background: rgba(9,37,102, 1);
+  border: none;
   margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  
+  cursor: pointer;
 }
+
 .generate-name-btn:hover,
 .generate-name-btn:active {
   background: rgba(12,99,179, 1);
 }
-
-
 
 footer {
   font-size: 12px;
@@ -96,7 +100,7 @@ footer {
   padding: 1rem;
 }
 
-@media screen and (min-width: 500px) {
+/* @media screen and (min-width: 850px) {
   footer {
     background: #fff;
     position: absolute;
@@ -105,3 +109,4 @@ footer {
     left: 0;
   }
 }
+ */
