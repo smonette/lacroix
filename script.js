@@ -31,6 +31,7 @@ let flavors = [
   "Honeydew",
   "Kiwi",
   "L'orange",
+  "Labubu",
   "Loofah",
   "Lychee",
   "Malort",
@@ -63,6 +64,7 @@ let flavors = [
   "Watermelon",
   "Yam",
   "Yeast",
+  "Za'atar"
 ]
 
 let colors = [
